@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function App() {
   const [data, setData] = useState('');
   const checkApi = async()=>{
-    const res = await fetch('http://localhost:8000');
+    const res = await fetch('https://testreactbe.onrender.com');
     setData(await res.json()) ;
   }
 
